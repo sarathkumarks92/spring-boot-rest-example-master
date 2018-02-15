@@ -29,6 +29,7 @@ public class HotelController {
     public void createHotel(@RequestBody Hotel hotel,
                                  HttpServletRequest request, HttpServletResponse response) {
         Hotel createdHotel = this.hotelService.createHotel(hotel);
+        System.out.println("commit");
         response.setHeader("Location", request.getRequestURL().append("/").append(createdHotel.getId()).toString());
     }
 }
