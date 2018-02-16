@@ -35,6 +35,12 @@ spring:
 
 spring.jpa:
     hibernate.ddl-auto: create-drop
+    
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: spring-boot-rest-example-master
 
 
  
